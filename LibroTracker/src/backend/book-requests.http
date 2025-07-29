@@ -1,0 +1,32 @@
+### Create a book
+POST http://localhost:3030/books HTTP/1.1
+content-type: application/json
+
+{
+    "bookISBN" : "9798890571601",
+    "bookTitle" : "The Canary Code: A Guide to Neurodiversity, Dignity, and Intersectional Belonging at Work",
+    "bookAuthor" : "Ludmila N. Praslova",
+    "bookGenre" : "Non-Fiction",
+    "dateRead" : "2025-01-19"
+}
+
+### Create a book
+POST http://localhost:3030/books HTTP/1.1
+content-type: application/json
+
+{
+    "bookISBN" : "9780385490818",
+    "bookTitle" : "Handmaiden's Tale",
+    "bookAuthor" : "Margaret Atwood",
+    "bookGenre" : "Fiction",
+    "dateRead" : "2017-05-03"
+}
+
+### Gets all books
+GET http://localhost:3030/books HTTP/1.1
+
+### Gets a book by ID
+GET  http://localhost:3030/books/9780385490818 HTTP/1.1
+
+
+
